@@ -1,22 +1,31 @@
-# banking
-Basic script to interact with the Investec API
+# Investec API interaction
+
+These are some basic scripts to interact with the Investec API. It let's you get transactions, by either specifying a date range, or by extracting multiple ranges in a loop, incrimentally.
+
+More scripts will be added later, e.g. to extract account details. 
+
+**Folder structure**
 
 The scripts are set up to run in their own folders, e.g.
 
-/Investec
-    /Get Info
-        GetAccounts...
-        GetTransactions.py
-        GetTransactionsInc.py
-    /Analyse
-        ScriptsForAnalysingData
-    /Config
-        config.json
-        sandbox_config.json
-    /Output
-        /Accounts
-        /Transactions
-        /TransactionsCSV
+* /Investec
+    * /Get Info
+        * GetAccounts...
+        * GetTransactions.py
+        * GetTransactionsInc.py
+    * /Analyse
+        * ScriptsForAnalysingData
+    * /Config
+        * config.json
+        * sandbox_config.json
+    * /Output
+        * /Accounts
+        * /Transactions
+        * /TransactionsCSV
+
+**Config**
+
+*Main config*
 
 An example of config.json would look like this:
 
@@ -29,6 +38,8 @@ An example of config.json would look like this:
     "alt_api_key" : "a.backup.api.key",
     "auth_base64" : "the.base64.version.of.clientid.and.clientsecret"
 }
+
+*Sandbox config*
 
 sandbox_config.json looks like this:
 
