@@ -29,6 +29,7 @@ The scripts are set up to run in their own folders, e.g.
 
 An example of config.json would look like this:
 
+```
 {
     "host" : "the.prod.url",
     "client_id" : "your.client.id",
@@ -38,13 +39,14 @@ An example of config.json would look like this:
     "alt_api_key" : "a.backup.api.key",
     "auth_base64" : "the.base64.version.of.clientid.and.clientsecret"
 }
+```
 
 *Sandbox config*
 
 sandbox_config.json looks like this:
 
 This info is publically available on Investec's API documentation. Please consult their developer website to obtain this info.
-
+```
 {
     "host" : "the.sandbox.url",
     "client_id" : "the.testing.client.id",
@@ -52,4 +54,4 @@ This info is publically available on Investec's API documentation. Please consul
     "api_key" : "the.testing.api.key",
     "auth_base64" : "the.testing.base64"
 }
-
+```
